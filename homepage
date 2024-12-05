@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperPrint - Custom Printing Services</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, form, input, button, textarea {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #333;
+        }
+        
+        /* Header */
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #7d9c50;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 50px 20px;
+            background-color: #094f0a;
+            color: #ffffff;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 10px;
+            font-size: 3rem;
+            color: #950db1;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #7d9c50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background-color: #094f0a;
+        }
+        
+        /* Services and Products Section */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #094f0a;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .grid-item h3 {
+            color: #950db1;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #7d9c50;
+            border-radius: 5px;
+            outline: none;
+            color: #333;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #950db1;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #7d9c50;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer .social-links a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        footer .social-links a:hover {
+            color: #950db1;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about-us">About Us</a>
+            <a href="#services-products">Services</a>
+			<a href="contact_us__paperprint.html">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			Members&nbsp;&nbsp;&nbsp; About Us&nbsp;&nbsp;&nbsp; Services &amp; 
+			Products&nbsp;&nbsp;&nbsp;&nbsp; Help &amp; Advice&nbsp;&nbsp;&nbsp;&nbsp; 
+			Contact US&nbsp;&nbsp;&nbsp;&nbsp; Sign In&nbsp;&nbsp;&nbsp;&nbsp; 
+			Payment<a href="#contact-us"><div class="logo">PaperPrint</div>
+        	</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to PaperPrint</h1>
+        <p>Your go-to source for custom printing and personalized products</p>
+        <button onclick="window.location.href='#services-products'">Explore Our Services</button>
+    </section>
+
+    <!-- Services & Products Section -->
+    <section id="services-products">
+        <h2>Our Services and Products</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Personalized Products</h3>
+                <ul>
+                    <li>Bags</li>
+                    <li>Mugs</li>
+                    <li>T-shirts</li>
+                    <li>Calendars</li>
+                    <li>Canvas Prints</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Customized Packages</h3>
+                <ul>
+                    <li>Party Supplies</li>
+                    <li>Clothing (Hoodies, Gym Wear)</li>
+                    <li>Office Supplies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PaperPrint. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
